@@ -1,0 +1,223 @@
+
+@font-face {
+    font-family: "Kabrio";
+    src: url(Tipografia/kabrio.zip);
+}
+
+:root{
+    --branco: #F9F5FF;
+    --roxo: #5633E0;
+    --amarelo: #FFCC00;
+    --marrom: #3D2B1F;
+    --preto: #040F0F; 
+
+    --gradient-roxo: linear-gradient(to top, rgba(112, 0, 255, 1), rgba(169, 111, 240, 1));
+    --gradient-amarelo: linear-gradient(to top, rgba(255, 204, 0, 1), rgba(254, 252, 214, 1));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1519px;
+
+    list-style: none;
+    text-decoration: none;
+}
+
+/*header -  header - header - header - header - header - header - header - header - header*/
+
+body{
+    background-color: var(--branco);
+}
+
+header{
+    padding: 15px 150px;
+    background-color: var(--branco);
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation .logo{
+    width: 344px;
+    height: 40px;
+}
+
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    font-family: 'Kabrio';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navigation ul li a{
+    color: var(--marrom);
+    padding-bottom: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navigation ul li a:hover{
+    color: var(--roxo);
+    border-bottom: 1px solid var(--roxo);
+}
+
+/*section hero - section hero - section hero - section hero - section hero - section hero - section hero*/
+
+.hero{
+    height: 140vh;
+    width: 100%;
+
+    background-image: url(Img/BG.png);
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.grid{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    gap: 250px;
+}
+
+.player{
+    position: relative;
+    top: 80px;
+}
+
+.main-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.main-text h2{
+    color: var(--branco);
+    font-size: 50px;
+    font-family: 'Kabrio';
+
+    line-height: 45px;
+}
+
+.main-text .grad{
+    font-size: 50px;
+    font-family: 'Kabrio';
+
+    padding-left: 123px;
+    position: relative; bottom: 45px; right: 5px;
+
+    background-image: var(--gradient-amarelo);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.main-text p{
+
+    color: var(--branco);
+    font-size: 25px;
+    font-family: 'Kabrio';
+    font-weight: 300;
+    
+    padding-top: 15px;
+    padding-bottom: 40px;
+
+    position: relative; bottom: 45px;
+}
+
+.main-text button{
+    padding: 15px;
+    
+    color: var(--branco);
+    background-image: var(--gradient-roxo);
+    
+    border-radius: 10px;
+
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.main-text button:hover{
+    opacity: 0.90;
+    cursor: pointer;
+}
+
+/*section sobre - section sobre - section sobre - section sobre - section sobre - section sobre - section sobre - */
+
+#sobre{
+    font-family: 'kabrio';
+    height: 600px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ #sobre h3{
+    font-size: 25px;
+    text-align: center;
+
+    padding-bottom: 25px;
+}
+
+#sobre p{
+    text-align: center;
+}
+
+.text-row{
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 120px;
+    gap: 200px;
+}
+
+.text-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-column p{
+    width: 480px;
+}
+
+/* section MVV - section MVV - section MVV - section MVV - */
+
+#mvv{
+    font-family: 'kabrio';
+    height: 600px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav button{
+    height: 50px;
+    width: 400px;
+
+    color: var(--branco);
+    background-color: var(--roxo);
+    
+    font-size: 25px;
+    font-weight: 600;
+    
+    border: none;
+}
+
