@@ -159,8 +159,6 @@ header{
    
     display: flex;
     justify-content: center;
-    
-    margin-bottom: 250px;
 }
 
  #sobre h3{
@@ -252,17 +250,152 @@ header{
     height: 100vh;
 }
 
+#beneficio h3{
+    font-size: 30px;
+    font-family: 'Kabrio';
+
+    display: flex;
+    justify-content: center;
+
+    padding: 40px;
+}
 .card{
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
 
     background-color: var(--roxo);
 
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
 
     padding-bottom: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.grid-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* section cases - section cases - section cases - section cases - section cases */
+
+
+#cases{
+    width: 400vw;
+    height: 100vh;
+}
+
+#cases h3{
+    font-size: 30px;
+    font-family: 'Kabrio';
+
+    display: flex;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+.bloco{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+#cases .bloco-1{ 
+    width: 225px;
+    height: 525px;
+
+    background-color: #FFF8E2;
+
+    border: none;
+    border-radius: 8px;
+
+    padding-bottom: 25px;
+    margin-bottom: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cases .bloco-2{ 
+    width: 225px;
+    height: 525px;
+
+    background-color: #A57547;
+
+    border: none;
+    border-radius: 8px;
+
+    padding-bottom: 25px;
+    margin-bottom: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cases .bloco-3{ 
+    width: 225px;
+    height: 525px;
+
+    background-color: #A2CFA9;
+
+    border: none;
+    border-radius: 8px;
+
+    padding-bottom: 25px;
+    margin-bottom: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+   max-width: 200px;
+   max-height: 100px;
+   width: auto;
+   height: auto;
+}
+
+/* section info - section info - section info - section info */
+
+#info{
+    width: 400vw;
+    height: 30vh;
+    background-color: var(--roxo);
+}
+
+.text-info{
+    color: var(--branco);
+    
+    font-size: 25px;
+    font-family: 'Kabrio';
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.autor{
+    padding-left: 600px;
+
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+
+.align{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 75px;
+}
 
