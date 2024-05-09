@@ -1039,6 +1039,7 @@ footer{
     #teacher{
         height: 120vh;
     }
+
     .prof-thiago{
         display: flex;
         flex-direction: column;
@@ -1101,6 +1102,10 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+    header{
+        height: 1vh;
+    }
+    
     .navigation .logo{
         width: 30vw;
     }
@@ -1214,6 +1219,59 @@ footer{
 
     .professor{
         width: 225px;
+    }
+}
+
+@media screen and (max-width: 660px){
+    header{
+        height: 1vh;
+    }
+    
+    .grid{
+        padding-top: none;
+    }
+    
+    .hero{
+        background-size: cover;
+        background-position: 0 80% 0 90%;
+    }
+    
+    #mvv{
+        margin-top: 200px;
+    }
+
+    #beneficio .text{
+        font-size: 16px;
+    }
+    
+    #teacher{
+        height: 130vh;
+    }
+
+    #info p{
+        font-size: 17px;
+    }
+
+    .vetor-info{
+        scale: 0.9;
+    }
+
+    details summary{
+        width: 75vw;
+    }
+
+    details p{
+        width: 75vw;
+    }
+
+    form{
+        height: 130vh;
+
+        padding-bottom: 50px;
+    }
+
+    .logo-footer{
+        width: 35%;
     }
 }
 
@@ -1366,6 +1424,34 @@ footer{
     }
 }
 
+@media screen and (max-width: 500px){
+    .main-text{
+        scale: 0.7;
+        width: 500px;
+        position: relative;
+        bottom: 150px;
+        right: 40px;
+    }
+    
+    .professor{
+        width: 200px;
+    }
+
+    #beneficio{
+        margin-top: 70px;
+    }
+
+    .autor{
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .autor{
+        padding-left: 10px;
+    }
+}
+
 @media screen and (max-width: 460px) {
     .navigation .logo{
         width: 35vw;
@@ -1413,6 +1499,10 @@ footer{
         scale: 0.5;
     }
 
+    #mvv{
+        margin-top: 250px;
+    }
+
     #cases .bloco-1, 
     #cases .bloco-2, 
     #cases .bloco-3, 
@@ -1447,8 +1537,22 @@ footer{
         width: 75vw;
     }
 
+    #info p{
+        scale: 0.95;
+    }
+
     .autor{
         padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .main-text{
+        scale: 0.65;
+        width: 500px;
+        position: relative;
+        bottom: 120px;
+        right: 80px;
     }
 }
 
@@ -1540,6 +1644,26 @@ footer{
     }
 }
 
+@media screen and (max-width: 350px) {
+    .main-text{
+        scale: 0.55;
+        width: 500px;
+        position: relative;
+        bottom: 120px;
+        right: 80px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .main-text{
+        scale: 0.5;
+        width: 500px;
+        position: relative;
+        bottom: 120px;
+        right: 80px;
+    }
+}
+
 @media screen and (max-width: 320px) {
     
     .hero{
@@ -1571,11 +1695,15 @@ footer{
     }
 
     #mvv{
-        margin-top: 325px;
+        margin-top: 425px;
+    }
+
+    #mvv p{
+        font-size: 12px;
     }
 
     #beneficio{
-        height: 40vh;
+        height: 45vh;
     }
 
     #beneficio h3{
@@ -1592,10 +1720,6 @@ footer{
 
     #teacher .treinadores{
         scale: 0.5;
-    }
-
-    #mvv p{
-        font-size: 12px;
     }
 
     #cases .bloco-1, 
@@ -1626,7 +1750,7 @@ footer{
     }
 
     #teacher{
-        height: 100vh;
+        height: 120vh;
     }
 
     .treinadores{
@@ -1651,8 +1775,16 @@ footer{
         font-size: 22px;
     }
 
+    .text-info{
+        height: 100px;
+        position: relative;
+        bottom: 30px;
+    }
+
     .autor{
-        padding-left: 5px;
+        position: relative;
+        bottom: 30px;
+        padding-left: 1px;
     }
 
     .align{
@@ -1663,11 +1795,13 @@ footer{
         font-size: 22px;
     }
     details summary{
+        font-size: 15px;
         width: 90vw;
     }
 
     details p{
         width: 90vw;
+        font-size: 12px;
     }
 
     form{
