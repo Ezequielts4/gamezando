@@ -817,7 +817,12 @@ footer{
 /* responsividade - responsividade - responsividade - responsividade - responsividade */
 
 @media screen and (max-width: 1440px) {
-   
+    
+    .main-text{
+        position: relative;
+        bottom: 150px;
+    }
+
     .prof-row{
         display: flex;
         flex-direction: row;
@@ -1006,7 +1011,7 @@ footer{
     }
 
     #mvv{
-        margin-top: 10%;
+        margin-top: 15%;
     }
 
     #beneficio{
@@ -1064,8 +1069,15 @@ footer{
         font-size: 30px;
     }
 
+    #teacher{
+        height: 150vh;
+    }
     .professor{
         width: 225px;
+    }
+
+    form{
+        height: 140vh;
     }
 
     details summary{
@@ -1275,6 +1287,13 @@ footer{
     }
 }
 
+@media screen and (max-width: 555px){
+    .main-text{
+        position: relative;
+        bottom: 170px;
+    }
+}
+
 @media screen and (max-width: 540px) {
     .navigation ul li{
        /* bottom: 50px;
@@ -1299,7 +1318,7 @@ footer{
     .main-text{
         scale: 0.8;
         position: relative;
-        bottom: 150px;
+        bottom: 170px;
     }
 
     #sobre h3{
