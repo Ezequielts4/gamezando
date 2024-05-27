@@ -1,4 +1,5 @@
-@font-face {
+Atualizações nos atalhos do teclado … Em quinta-feira, 1 de agosto de 2024, os atalhos de teclado do Drive serão atualizados para oferecer a navegação por letras iniciais.Saiba mais
+@font-face{
     font-family: "Kabrio";
     src: url(Tipografia/kabrio.zip);
 }
@@ -14,7 +15,8 @@
     --gradient-amarelo: linear-gradient(to top, rgba(255, 204, 0, 1), rgba(254, 252, 214, 1));
 }
 
-* {
+/* Reset CSS */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,14 +25,8 @@
     text-decoration: none;
 }
 
-html {
+html{
     scroll-behavior: smooth;
-}
-
-/*header -  header - header - header - header - header - header - header - header - header*/
-
-body{
-    background-color: var(--branco);
 }
 
 header{
@@ -51,8 +47,13 @@ header{
    display: none;
 }
 
+.navigation .controle{
+    width: 65px;
+    display: none;
+}
+
 .navigation .logo{
-    width: 17vw;
+    width: 234px;
 
     margin-top: 10px;
 }
@@ -80,102 +81,118 @@ header{
     border-bottom: 1px solid var(--roxo);
 }
 
-/*section hero - section hero - section hero - section hero - section hero - section hero - section hero*/
+/* section hero - section hero - section hero - section hero - section hero - section hero - section hero */
 
-.hero{
-    /*width: 100vw;*/
-    height: 100vh;
-
+#hero{
+    height: 90vh;
     background-image: url(Img/BG.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: 50% 15%;
 }
 
-.grid{
+.grid-hero{
     height: 100%;
-    width: 85vw;
-
+    width: 80vw;
+    max-width: 1920px;
+    
     margin: 0 auto;
 
-    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 350px;
 }
 
-.main-text{
-    position: relative; 
-    margin-top: 200px;
-}
-
-.main-text h2{
-    color: var(--branco);
-    font-size: 50px;
-    font-family: 'Kabrio';
-
-    line-height: 45px;
-}
-
-.main-text .grad{
-    font-size: 50px;
-    font-family: 'Kabrio';
-
-    padding-left: 123px;
-    position: relative; bottom: 45px; right: 5px;
-
-    background-image: var(--gradient-amarelo);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-.main-text p{
-    color: var(--branco);
-    font-size: 25px;
+.text-hero{
+    display: flex;
+    flex-direction: column;
 
     font-family: 'Kabrio';
-    font-weight: 300;
     
-    padding-top: 15px;
-    padding-bottom: 40px;
-
-    position: relative; bottom: 45px;
+    color: var(--branco);
 }
 
-.btn{
+#hero h2{
+    width: 500px;
+    font-size: 3rem;
+}
+
+#hero p{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+#hero button{
     text-transform: uppercase;
-}
 
-.main-text button{
-    padding: 15px 80px;
-    position: relative; bottom: 30px;
-    
+    height: 50px;
+    width: 400px;
+
     color: var(--branco);
     background-image: var(--gradient-roxo);
     
-    border-radius: 10px;
+    margin-top: 40px;
+    border-radius: 8px;
 
     font-weight: 600;
     font-size: 22px;
 }
 
-.main-text button:hover{
-    opacity: 0.90;
-    cursor: pointer;
-}
+/* palavra rotacionando - palavra rotacionando - palavra rotacionando - palavra rotacionando - palavra rotacionando */
 
-/*section sobre - section sobre - section sobre - section sobre - section sobre - section sobre - section sobre */
+.frase {
+    width:100%;
+    height:40px;
+    float:left;
+    font-size: 40px;
+    display:block;
+   }
+
+   .frase h3 {
+    float:left;
+    font-family:'Kabrio';
+   }
+
+   .frase b {
+    padding:0em 0.3em;
+
+    font-weight: 600;
+    font-family: 'Kabrio';
+    font-size: 48px;
+
+    background-image: var(--gradient-amarelo);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+   }
+
+
+/* section sobre = section sobre = section sobre = section sobre = section sobre = section sobre = section sobre */
 
 #sobre{
-    font-family: 'kabrio';
+    height: 80vh;
 
-    /*width: 100vw;*/
-    height: 70vh ;
-   
+    font-family: 'Kabrio';
+    background-color: var(--branco);
+}
+
+.grid-sobre{
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+    
+    margin: 0 auto;
+    /* padding-top: 50px; */
+
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
- #sobre h3{
-    font-size: 25px;
+#sobre h3{
+    font-size: 1.5rem;
 
     text-align: center;
 
@@ -184,83 +201,25 @@ header{
 }
 
 #sobre p{
-    font-size: 18px;
+    font-size: 1.125rem;
 
     text-align: center;
+
+    max-width: 900px;
+    min-width: 300px;
 }
 
-.text-row{
+.text-sobre-row{
     display: flex;
     flex-direction: row;
 
-    padding-top: 50px;
-
-    width: 100%;
+    padding-top: 100px;
+    gap: 150px;
 }
 
-.text-column{
+.text-sobre-column{
     display: flex;
     flex-direction: column;
-
-    align-items: center;
-    
-    padding-right: 5%;
-}
-
-/* section MVV - section MVV - section MVV - section MVV - section MVV - section MVV - section MVV - section MVV */
-
-#mvv{
-    font-family: 'Kabrio';
-
-    height: 45vh;
-    /*width: 100vw;*/
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 50px;
-}
-
-.nav button{
-    height: 50px;
-    width: 20vw;
-
-    color: var(--branco);
-    background-color: var(--roxo);
-    
-    font-size: 25px;
-    font-weight: 600;
-    
-    border: none;
-    border-radius: 10px;
-}
-
-.nav{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    
-    gap: 10px;
-}
-
-.m, 
-.vi, 
-.va{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.text-mvv{
-    font-size: 18px;
-    text-align: center;
-
-    color: var(--roxo);
-
-    width: 25vw;
-
-    padding-top: 25px;
 }
 
 /*section beneficios - section beneficios - section beneficios - section beneficios - section beneficios - section beneficios */
@@ -269,7 +228,21 @@ header{
     /*width: 100vw;*/
     height: 100vh;
 
-    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.grid-beneficio{
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+    
+    margin: 0 auto;
+    /* padding-top: 50px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #beneficio h3{
@@ -279,12 +252,12 @@ header{
     display: flex;
     justify-content: center;
 
-    padding: 40px;
+    margin-top: 50px;
 }
 
 .container {
     position: relative;
-    height: 16%;
+    /* height: 16%; */
 }
 
 .image {
@@ -352,14 +325,20 @@ box-shadow: 9px 10px 4px -8px rgba(0,0,0,0.4);
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+
+
+    padding-top: 50px;
+    gap: 50px;
+
 }
 
-.grid-beneficio-column{
+#overflow-beneficio{
+    width: 90vw;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    justify-content: space-between;
 }
 
 /* section cases - section cases - section cases - section cases - section cases - section cases - section cases */
@@ -367,6 +346,20 @@ box-shadow: 9px 10px 4px -8px rgba(0,0,0,0.4);
 #cases{
     /*width: 100vw;*/
     height: 100vh;
+}
+
+.grid-cases{
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+    
+    margin: 0 auto;
+    /* padding-top: 50px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #cases h3{
@@ -379,11 +372,26 @@ box-shadow: 9px 10px 4px -8px rgba(0,0,0,0.4);
     padding: 40px;
 }
 
-.bloco{
+.bloco-cases{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 50px;
+}
+
+.bloco-cases:first-child{
+    margin-left: 400px;
+}
+
+.bloco-cases:last-child{
+    margin-right: 30px;
+}
+
+.logo-case{
+   width: 150px;
+
+   margin-top: 25px;
 }
 
 #cases .bloco-1, 
@@ -391,8 +399,9 @@ box-shadow: 9px 10px 4px -8px rgba(0,0,0,0.4);
 #cases .bloco-3, 
 #cases .bloco-4, 
 #cases .bloco-5{ 
-    width: 15vw;
-    height: 32vh;
+    width: 250px;
+    height: 250px;
+    min-width: 225px;
 
     border: none;
     border-radius: 8px;
@@ -426,11 +435,14 @@ box-shadow: 9px 10px 4px -8px rgba(0,0,0,0.4);
     background-color: #4D8241;
 }
 
+.overflow-cases{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.logo-case{
-   width: 75%;
-
-   margin-top: 25px;
+    flex-wrap: wrap-reverse;
+    overflow-x: scroll;
 }
 
 /* section info - section info - section info - section info - section info - section info - section info - section info */
@@ -439,6 +451,40 @@ box-shadow: 9px 10px 4px -8px rgba(0,0,0,0.4);
     /*width: 100vw;*/
     height: 35vh;
     background-color: var(--roxo);
+}
+
+.grid-info{
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+    
+    margin: 0 auto;
+    /* padding-top: 50px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-info-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-info-row{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+} 
+
+#info img{
+    min-width: 180px;
+    margin-right: 80px;
+
+    color: var(--branco);
 }
 
 .text-info{
@@ -452,7 +498,7 @@ box-shadow: 9px 10px 4px -8px rgba(0,0,0,0.4);
 }
 
 .autor{
-    padding-left: 600px;
+    margin-left: 600px;
     
     font-weight: 200;
     font-size: 20px;
@@ -460,18 +506,25 @@ box-shadow: 9px 10px 4px -8px rgba(0,0,0,0.4);
     font-style: normal;
 }
 
-.align{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-/* section teacher - section teacher - section teacher - section teacher */
+/* section treinadores - section treinadores - section treinadores - section treinadores - section treinadores */
 
 #teacher{
     /*width: 100vw;*/
     height: 90vh;
+}
+
+.grid-prof{
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+    
+    margin: 0 auto;
+    /* padding-top: 50px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #teacher h3{
@@ -481,16 +534,8 @@ box-shadow: 9px 10px 4px -8px rgba(0,0,0,0.4);
     display: flex;
     justify-content: center;
 
-    padding: 40px;
-}
+    padding-bottom: 30px; 
 
-.treinadores{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    gap: 30px;
-    padding-top: 50px;
 }
 
 .prof-row{
@@ -501,7 +546,7 @@ box-shadow: 9px 10px 4px -8px rgba(0,0,0,0.4);
 }
 
 .professor{
-    width: 75%;
+    width: 300px;
 
     border: none;
 
@@ -530,6 +575,14 @@ box-shadow: 9px 10px 4px -8px rgba(0,0,0,0.4);
     margin-bottom: 50px;
 }
 
+.prof-row{
+    width: 90vw;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: unset;
+}
+
 /* section FAQ - section FAQ - section FAQ - section FAQ - section FAQ - section FAQ - section FAQ - section FAQ - section FAQ */
 
 #faq{
@@ -537,6 +590,20 @@ box-shadow: 9px 10px 4px -8px rgba(0,0,0,0.4);
     height: 70vh auto;
 
     background-color: var(--roxo);
+}
+
+.grid-faq{
+    height: 100%;
+    width: 70vw;
+    max-width: 1920px;
+    
+    margin: 0 auto;
+    /* padding-top: 50px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #faq h3{
@@ -678,10 +745,9 @@ form h3{
 
 .fundo{
     width: 100%;
-    height: 85%;
+    height: 85vh;
 
     background-color: var(--roxo);
-    border-radius: 10px;
 
     display: flex;
     flex-direction: column;
@@ -752,6 +818,19 @@ footer{
     background-color: var(--preto);
 }
 
+.grid-footer{
+    height: 100%;
+    width: 70vw;
+    max-width: 1920px;
+    
+    margin: 0 auto;
+    /* padding-top: 50px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .align-footer{
     display: flex;
     flex-direction: row;
@@ -760,14 +839,19 @@ footer{
 }
 
 .logo-footer{
-    width: 20vw;
+    width: 250px;
+}
+
+footer .controle{
+    width: 60px;
+    display: none;
 }
 
 .icon-footer{
     display: flex;
     align-items: center;
     gap: 20px;
-
+    
     color: var(--branco);
 }
 
@@ -799,9 +883,13 @@ footer{
     margin-top: 30px;
 }
 
+.text-footer img{
+    width: 15px;
+}
+
 .text-footer{
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 
     display: flex;
     flex-direction: row;
@@ -810,1028 +898,490 @@ footer{
 
     color: var(--branco);
 
-    padding-top: 15px;
+    margin-top: 25px;
     gap: 5px;
 }
 
-/* responsividade - responsividade - responsividade - responsividade - responsividade */
+/* responsividade - responsividade - responsividade - responsividade - responsividade - responsividade - responsividade */
 
-@media screen and (max-width: 1440px) {
-    
-    .main-text{
-        position: relative;
-        bottom: 150px;
-    }
+@media screen and (max-width: 1250px){
+    #overflow-beneficio{
+        flex-wrap: wrap-reverse;
+        overflow-x: auto;
 
-    .prof-row{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        gap: 70px;
-    }
-}
-
-@media screen and (max-width: 1245px) {
-    #beneficio{
-        margin-bottom: 150px;
-    }
-
-    .prof-row{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 70px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    header .navigation{
-        gap: 110px;
-    }
-
-    .navigation ul{
-        gap: 40px;
-    }
-
-    .navigation .logo{
-        width: 18vw;
-    }
-
-    .hero{
-        background-size: 1400px;
-        background-position: 50% 50%;
-    }
-
-    .nav button{
-        width: 25vw;
-    }
-
-    .container {
-        width: 70%;
-    }
-
-    #teacher{
-        height: 160vh;
-    }
-    .prof-thiago{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .treinadores{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        height: 20%;
-    }
-
-    .prof-row{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        gap: 70px; 
-    }
-
-    .sobrenome{
-        font-size: 30px;
-    }
-
-    .text{
-        font-size: 18px;
-        width: 200px;
-    }
-
-    .titulo{
-        font-size: 20px;
-    }
-
-    #cases .bloco-1, 
-    #cases .bloco-2, 
-    #cases .bloco-3, 
-    #cases .bloco-4, 
-    #cases .bloco-5{ 
-    width: 18vw;
-    height: 30vh;
-    }
-
-    .vetor-info{
-        width: 160px;
-    }
-
-    .text-info{
-        font-size: 22px;
     }
 
     .autor{
-        padding-left: 500px;
+        margin-left: 400px;
     }
 
-    .align{
-        gap: 50px;
-    }
-
-    .professor{
-        width: 80%;
-    }
-
-    form{
-      margin-bottom: 10%;
-    }
-
-    .logo-footer{
-        width: 25vw;
+    #beneficio h3{
+        padding-bottom: 80px;
     }
 }
 
-@media screen and (max-width: 860px) {  
+@media screen and (max-width: 1220px){
+    .bloco-cases:first-child{
+        margin-left: 600px;
+    }
+}
 
+@media screen and (max-width: 1150px){
+    #teacher .prof-row{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #hero{
+        background-position: 60% 15%;
+    }
+
+    /* arrumar o header - arrumar o header - arrumar o header - arrumar o header */
     header .navigation{
-       gap:  100px;
-       display: unset;
-     }
-
-    .navigation button{
-
-        display: unset;
-    /*    background: none;
-        border: none;
-
-        fill: var(--marrom);
-
-        position: relative;
-        
-        bottom: 50px;
-        left: 70%;*/
-    }
-
-    .navigation ul{
         display: none;
-       /* flex-direction: column;
-
-        gap: 0;*/
+        padding-top: 10px;
     }
 
-    .navigation ul li{
-
-      /*  height: 15vh;
-        background-color: var(--branco);*/
-
+    header .logo{
         display: none;
-        /*align-items: center;
-
-        position: relative;
-        bottom: 40px;
-        left: 70%;   */
-    }
-    
-    .navigation .logo{
-        width: 25vw;
     }
 
-    .hero{
-        background-size: 1300px;
+    .navigation svg{
+        display: inline;
     }
 
-    .main-text{
-        scale: 0.9;
-        padding-bottom: 150px;
+    .navigation .controle{
+        display: inline;
     }
-    
-    .navigation ul li{
-        width: 80px;
-    }
-
-    .text-row{
-        display: flex;
-        flex-direction: column;
-
-        padding-top: unset;
-    }
-
-    #mvv{
-        margin-top: 15%;
-    }
-
-    #beneficio{
-        height: 75vh;
-    }
-     
-    #cases .bloco-1, 
-    #cases .bloco-2, 
-    #cases .bloco-3, 
-    #cases .bloco-4, 
-    #cases .bloco-5{ 
-    width: 20vw;
-    height: 30vh;
-    }
-
-    .text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        left: 38%;
-
-        scale: 0.8;
-    }
-
-    .autor{
-        padding-left: 300px;
-    }
-   
-    #teacher{
-        height: 120vh;
-    }
-
-    .prof-thiago{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .treinadores{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        height: 20%;
-    }
-
-    .prof-row{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 70px;
-    }
-
-    .sobrenome{
-        font-size: 30px;
-    }
-
-    #teacher{
-        height: 150vh;
-    }
-    .professor{
-        width: 225px;
-    }
-
-    form{
-        height: 140vh;
-    }
+    /* arrumar o header - arrumar o header - arrumar o header - arrumar o header */
 
     details summary{
-        width: 60vw;
+        width: 50vw;
     }
 
     details p{
-        width: 60vw;
+        width: 50vw;
     }
 
-    .nome{
+    #form .nome{
         width: 60%;
     }
-
-    .email{
+    
+    #form .email{
         width: 60%;
     }
-
-    .descricao{
+    
+    #form .descricao{
         width: 60%;
-    }
-
-    .btn-form{
-        width: 40%;
-    }
-
-    .icon-insta,
-    .icon-email,
-    .icon-linkedin,
-    .icon-face,
-    .icon-telefone{
-        scale: 0.8;
     }
 }
 
-@media screen and (max-width: 768px) {
-    header{
-        height: 1vh;
+@media screen and (max-width: 1000px){
+    .bloco-cases:first-child{
+        margin-left: 800px;
+    }
+
+    .autor{
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    #info .text-info{
+        font-size: 20px;
+    }
+
+    .autor{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #hero{
+        background-position: 70% 15%;
+    }
+
+    #sobre{
+        height: 120vh;
+    }
+
+    .text-sobre-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    details summary{
+        width: 70vw;
+    }
+
+    details p{
+        width: 70vw;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #form .nome{
+        width: 70%;
     }
     
-    .navigation .logo{
-        width: 30vw;
+    #form .email{
+        width: 70%;
     }
     
-    .navigation ul li{
-    /*    bottom: 50px;
-        left: 74%;   */
+    #form .descricao{
+        width: 70%;
     }
 
-    .navigation button{
-        
-    /*    bottom: 50px;
-        left: 74%;*/
+    footer{
+        height: 45vh;
+        margin-top: 50px;
     }
 
-    .logo{
-        position: relative;
-        right: 80px;
+    .logo-footer{
+        display: none;
+    }
+    
+    footer .controle{
+        display: inline;
+        margin-bottom: 35px;
     }
 
-    .hero{
-        background-size: cover;
-        background-position: 0 80% 0 90%;
-    }
-   
-    #mvv{
-    margin-top: 150px;
+    .text-footer img{
+        width: 10px;
     }
 
-   .autor{
-    padding-left: 150px;
+    .align-footer{
+        display: flex;
+        flex-direction: column;
     }
+}
 
-    .main-text{
-        scale: 0.9;
-        padding-bottom: 90px;
+
+@media screen and (max-width: 760px){
+    .autor{
+        margin-left: 100px;
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    .bloco-cases:first-child{
+        margin-left: 900px;
     }
 
     #beneficio h3{
         text-align: center;
     }
+}
 
-    #cases .bloco-1, 
-    #cases .bloco-2, 
-    #cases .bloco-3, 
-    #cases .bloco-4, 
-    #cases .bloco-5{ 
-    width: 25vw;
-    height: 30vh;
+@media screen and (max-width: 675px){
+    .bloco-cases:first-child{
+        margin-left: 1000px;
     }
 
-    .professor{
-        width: 100%;
+    #info img{
+        min-width: 140px;
     }
 
-    #teacher .prof-grid{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .treinadores{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .treinadores p{
-        scale: 0.9;
-    }
-
-    form h3{
+    #form h3{
         text-align: center;
     }
 
-    .main-text{
-        position: relative;
-        scale: 0.8;
-        bottom: 120px;
-    }
-    
-    #teacher{
-        height: 120vh;
-    }
-
-    .prof-thiago{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .treinadores{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        height: 20%;
-    }
-
-    .prof-row{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 70px;
-    }
-
-    .sobrenome{
-        font-size: 30px;
-    }
-
-    .professor{
-        width: 225px;
+    footer{
+        margin-top: 70px;
     }
 }
 
-@media screen and (max-width: 660px){
-    header{
-        height: 1vh;
-    }
-    
-    .grid{
-        padding-top: none;
-    }
-    
-    .hero{
-        background-size: cover;
-        background-position: 0 80% 0 90%;
-    }
-    
-    #mvv{
-        margin-top: 200px;
-    }
-
-    #beneficio .text{
-        font-size: 16px;
-    }
-    
-    #teacher{
-        height: 130vh;
-    }
-
-    #info p{
-        font-size: 17px;
-    }
-
-    .vetor-info{
-        scale: 0.9;
-    }
-
-    details summary{
-        width: 75vw;
-    }
-
-    details p{
-        width: 75vw;
-    }
-
-    form{
-        height: 130vh;
-
-        padding-bottom: 50px;
-    }
-
-    .logo-footer{
-        width: 35%;
-    }
-}
-
-@media screen and (max-width: 555px){
-    .main-text{
-        position: relative;
-        bottom: 170px;
-    }
-}
-
-@media screen and (max-width: 540px) {
-    .navigation ul li{
-       /* bottom: 50px;
-        left: 94%;   */
-    }
-
-    .navigation button{
-        
-     /*   bottom: 50px;
-        left: 94%;*/
-    }
-
-    .logo{
-        position: relative;
-        right: 80px;
-    }
-
-    .hero{
-        background-position-x: 70%;
-    }
-
-    .main-text{
-        scale: 0.8;
-        position: relative;
-        bottom: 170px;
-    }
-
-    #sobre h3{
-        font-size: 22px;
-    }
-
-    #sobre p{
-        font-size: 16px;
-    }
-
-    #mvv{
-        margin-top: 200px;
-    }
-
-    #mvv button{
-        font-size: 20px;
-    }
-
-    #cases h3{
-        text-align: center;
-    }
-
-    #cases .bloco-1, 
-    #cases .bloco-2, 
-    #cases .bloco-3, 
-    #cases .bloco-4, 
-    #cases .bloco-5{ 
-    width: 25vw;
-    height: 25vh;
-    }
-
-
-    #beneficio .grid-beneficio-row{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #beneficio .grid-beneficio-column{
-        display: flex;
-        flex-direction: row;
-        
-    }
-    
-    .image{
-        width: 25vw;
-    }
-
-    .titulo{
+@media screen and (max-width: 600px){
+    #info .text-info{
         font-size: 18px;
     }
 
-    .text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        left: 25%;
-
-        scale: 0.65;
-    }
-
-    #info p{
+    .autor{
         font-size: 15px;
     }
 
-    .vetor-info{
-        scale: 0.8;
+    #hero button{
+        margin-top: 250px;
+    }
+
+    #hero h2{
+        font-size: 2.7rem;
+    }
+
+    .frase {
+        font-size: 2.3rem;
+    }
+
+    .texto b{
+        font-size: 2.7rem;
+    }
+
+    #hero p{
+        display: none;
     }
 
     #teacher h3{
         text-align: center;
     }
 
-    .prof-row{
-        margin-left: 5px;
-        margin-right: 5px;
+    #faq h3{
+        text-align: center;
     }
 
+    #form .btn-form{
+        width: 250px;
+        font-size: 20px;
+    } 
+}
+
+@media screen and (max-width: 575px){
     details summary{
         width: 70vw;
-    }
-
-    details p{
-        width: 70vw;
-    }
-
-    .nome{
-        width: 70%;
-    }
-
-    .email{
-        width: 70%;
-    }
-
-    .descricao{
-        width: 70%;
-    }
-
-    .btn-form{
-        width: 50%;
-    }
-
-    form{
-        margin-bottom: 100px;
-    }
-
-    .icon-insta,
-    .icon-email,
-    .icon-linkedin,
-    .icon-face,
-    .icon-telefone{
-        scale: 0.6;
-    }
-
-    .icon-footer{
-        gap: 5px;
-    }
-
-    footer .align-footer img{
-        width: 30vw;
+        height: 60px;
     }
 }
 
-@media screen and (max-width: 500px){
-    .main-text{
-        scale: 0.7;
-        width: 500px;
-        position: relative;
-        bottom: 150px;
-        right: 40px;
-    }
-    
-    .professor{
-        width: 200px;
+@media screen and (max-width: 545px){
+    .bloco-cases:first-child{
+        margin-left: 1100px;
     }
 
-    #beneficio{
-        margin-top: 70px;
+    #hero h2{
+        font-size: 2.2rem;
+        width: 400px;
     }
 
-    .autor{
-        padding-left: 100px;
-    }
-}
-
-@media screen and (max-width: 470px) {
-    .autor{
-        padding-left: 10px;
-    }
-}
-
-@media screen and (max-width: 460px) {
-    .navigation .logo{
-        width: 35vw;
-    }
-    
-    .navigation ul li{
-    /*    position: relative;
-        bottom: 50px;
-        left: 182px;  */ 
+    .frase {
+        font-size: 30px;
     }
 
-    .navigation button{
-      /*  position: relative;
-        bottom: 50px;
-        left: 182px;*/
+    /* arrumar o tamanho da palavra */
+    .texto b{
+        font-size: 30px;
+    }
+    /* arrumar o tamanho da palavra */
+
+    #sobre{
+        height: 130vh;
     }
 
-    .hero{
-        background-position-x: 80%;
-    }
-
-    .main-text{
-        scale: 0.7;
-        width: 500px;
-        position: relative;
-        bottom: 130px;
-        right: 40px;
-    }
-
-    .main-text button{
-        font-size: 18px;   
-    }
-
-    .titulo{
+    #info .text-info{
         font-size: 16px;
     }
 
-    .text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        left: 10%;
-
-        scale: 0.5;
+    .autor{
+        font-size: 13px;
+        margin-left: 50px;
     }
 
-    #mvv{
-        margin-top: 250px;
-    }
-
-    #cases .bloco-1, 
-    #cases .bloco-2, 
-    #cases .bloco-3, 
-    #cases .bloco-4, 
-    #cases .bloco-5{ 
-    width: 55vw;
-    height: 25vh;
-    }
-
-    #cases .bloco{
-        display: flex;
-        gap: 5px;
+    #info img{
+        min-width: 110px;
     }
 
     #cases h3{
         text-align: center;
     }
+}
 
-    .professor{
-        width: 40vw;
+@media screen and (max-width: 460px){
+    #hero button{
+        width: 350px;
+        font-size: 18px;
     }
 
-    #faq h3{
-        text-align: center;
+    #sobre{
+        height: 150vh;
     }
 
-    details summary{
-        width: 75vw;
+    #form .nome{
+        width: 80%;
+    }
+    
+    #form .email{
+        width: 80%;
+    }
+    
+    #form .descricao{
+        width: 80%;
     }
 
-    details p{
-        width: 75vw;
+    footer .controle{
+        width: 50px;
     }
 
-    #info p{
-        scale: 0.95;
+    footer svg{
+        width: 30px;
     }
 
-    .autor{
-        padding-left: 50px;
+    .text-footer{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .bloco-cases:first-child{
+        margin-left: 1200px;
+    }
+
+    #form .btn-form{
+        width: 200px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    #hero h2{
+        font-size: 2.1rem;
+        width: 350px;
+    }
+
+    .frase {
+        font-size: 1.8rem;
+    }
+
+    .texto b{
+        font-size: 0.2rem;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    #hero h2{
+        font-size: 1.9rem;
+        width: 330px;
     }
 }
 
 @media screen and (max-width: 420px){
-    .main-text{
-        scale: 0.65;
-        width: 500px;
-        position: relative;
-        bottom: 120px;
-        right: 80px;
+    #hero h2{
+        font-size: 1.7rem;
+        width: 290px;
+    }
+
+    #hero button{
+        width: 300px;
+    }
+
+    #info img{
+        margin-right: 10px;
     }
 }
 
-@media screen and (max-width: 375px) {
-    .navigation ul li{
-      /*  position: relative;
-        bottom: 50px;
-        left: 140px; */  
-    }
-
-    .navigation button{
-      /*  position: relative;
-        bottom: 50px;
-        left: 140px;*/
-    }
-
-    .hero{
-        background-position-x: 80%;
-    }
-
-    .main-text{
-        scale: 0.6;
-        width: 500px;
-        position: relative;
-        bottom: 120px;
-        right: 80px;
-    }
-
-    #mvv{
-        margin-top: 250px;
-    }
-
-    #mvv p{
+@media screen and (max-width: 410px){
+    #info .text-info{
         font-size: 15px;
     }
 
-    #beneficio{
-        margin-top: 50px;
+    .autor{
+        font-size: 11px;
+        margin-left: 30px;
     }
 
-    #cases .bloco-1, 
-    #cases .bloco-2, 
-    #cases .bloco-3, 
-    #cases .bloco-4, 
-    #cases .bloco-5{ 
-    width: 65vw;
-    height: 25vh;
+    #info img{
+        min-width: 100px;
     }
+}
 
-    #cases .bloco{
-        display: flex;
-        gap: 5px;
-    }
-
-    #info p{
-        font-size: 12px;
-    }
-
-    #info .vetor-info{
-        scale: 0.7;
+@media screen and (max-width: 400px){
+    #info .text-info{
+        font-size: 13px;
     }
 
     .autor{
-        padding-left: 20px;
+        margin-left: 1px;
     }
 
-    #teacher .treinadores{
-        scale: 0.7;
+    #info img{
+        min-width: 80px;
     }
 
-    .professor{
-        width: 60vw;
+    #sobre{
+        height: 160vh;
     }
 
-    .icon-insta,
-    .icon-email,
-    .icon-linkedin,
-    .icon-face,
-    .icon-telefone{
-        scale: 0.5;
+    .text-footer{
+        font-size: 10px;
     }
 
-    .icon-footer{
-        gap: 1px;
-    }
-
-    footer .text-footer{
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .main-text{
-        scale: 0.55;
-        width: 500px;
-        position: relative;
-        bottom: 120px;
-        right: 80px;
-    }
-}
-
-@media screen and (max-width: 325px) {
-    .main-text{
-        scale: 0.5;
-        width: 500px;
-        position: relative;
-        bottom: 120px;
-        right: 80px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    
-    .hero{
-        background-position-x: 80%;
-    }
-    
-    .navigation ul li{
-       /* position: relative;
-        bottom: 50px;
-        left: 120px;
-
-        scale: 0.8;*/
-    }
-
-    .navigation button{
-       /* position: relative;
-        bottom: 50px;
-        left: 120px;
-
-        scale: 0.8;*/
-    }
-
-    .main-text{
-        scale: 0.55;
-        width: 500px;
-        position: relative;
-        bottom: 120px;
-        right: 100px;
-    }
-
-    #mvv{
-        margin-top: 425px;
-    }
-
-    #mvv p{
-        font-size: 12px;
-    }
-
-    #beneficio{
-        height: 45vh;
-    }
-
-    #beneficio h3{
-        font-size: 22px;
-    }
-
-    #cases h3{
-        font-size: 22px;
-    }
-    
-    #info p{
-        font-size: 8px;
-    }
-
-    #teacher .treinadores{
-        scale: 0.5;
-    }
-
-    #cases .bloco-1, 
-    #cases .bloco-2, 
-    #cases .bloco-3, 
-    #cases .bloco-4, 
-    #cases .bloco-5{ 
-    width: 75vw;
-    height: 25vh;
-    }
-
-    #cases .bloco{
-        display: flex;
-        gap: 5px;
-    }
-
-    #info P{
-        font-size: 12px;
-    }
-
-    #info .vetor-info{
-        scale: 0.5;
-    }
-    
-    #teacher h3{
-        padding: unset;
-        font-size: 22px;
-    }
-
-    #teacher{
-        height: 120vh;
-    }
-
-    .treinadores{
-        padding-top: unset;
-    }
-
-    .professor{
-        width: 90vw;
-    }
-
-    .prof-row{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .treinadores{
-        position: relative;
-        bottom: 225px;
-    }
-
-    #faq h3{
-        font-size: 22px;
-    }
-
-    .text-info{
-        height: 100px;
-        position: relative;
-        bottom: 30px;
-    }
-
-    .autor{
-        position: relative;
-        bottom: 30px;
-        padding-left: 1px;
-    }
-
-    .align{
-        gap: 10px;
-    }
-
-    form h3{
-        font-size: 22px;
-    }
     details summary{
-        font-size: 15px;
+        width: 80vw;
+    }
+
+    details p{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 390px){
+    details p{
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    footer{
+        margin-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 350px){
+    .bloco-cases:first-child{
+        margin-left: 1250px;
+    }
+
+    #info .text-info{
+        font-size: 13px;
+    }
+
+    .autor{
+        margin-left: 1px;
+    }
+
+    #info img{
+        min-width: 80px;
+        margin-right: 10px;
+    }
+
+    #form .btn-form{
+        width: 170px;
+        font-size: 16px;
+    } 
+}
+
+@media screen and (max-width: 340px){
+
+    #hero button{
+        width: 280px;
+    }
+
+    #sobre{
+        height: 180vh;
+    }
+
+    details summary{
         width: 90vw;
     }
 
     details p{
         width: 90vw;
-        font-size: 12px;
+        height: 190px;
     }
 
-    form{
-        margin-bottom: 150px;
+    .text-footer{
+        font-size: 8px;
     }
+}
 
-    .btn-form{
-        scale: 0.9;
-    }
-
-    footer .text-footer{
-        font-size: 10px;
+@media screen and (max-width: 320px){
+    #hero h2{
+        font-size: 1.6rem;
+        width: 270px;
     }
 }

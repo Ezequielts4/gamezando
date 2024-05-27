@@ -1,3 +1,4 @@
+Atualizações nos atalhos do teclado … Em quinta-feira, 1 de agosto de 2024, os atalhos de teclado do Drive serão atualizados para oferecer a navegação por letras iniciais.Saiba mais
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,112 +6,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamezando</title>
+
     <link rel="shortcut icon" href="Logotipos/Favicon.png" type="image/x-icon">
+
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+
     <header>
         <nav class="navigation">
-            <a href="#"><img src="Logotipos/Gamezando-negativo.png" alt="Logotipo modo negativo" class="logo"></a>
+            <img src="Logotipos/Controle negativo.png" alt="Logotipo modo controle negativo" class="controle">
+            <img src="Logotipos/Gamezando-negativo.png" alt="Logotipo modo negativo" class="logo">
             <ul>
                 <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
                         <path
                             d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z" />
                     </svg></button>
-                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#beneficio">Benefícios</a></li>
                 <li><a href="#cases">Cases</a></li>
                 <li><a href="#form">Contato</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="grid">
-                <div class="main-text">
-                    <h2>Você está a um passo <br> de ter a sua empresa <br>mais<br>
-                        <h2 class="grad">criativa</h2>
-                    </h2>
-                    <p>Adquira as melhores estratégias <br> para impulsionar a sua equipe</p>
-                    <button class="btn">Entrar em contato</button>
+    <section id="hero">
+        <div class="grid-hero">
+            <div class="text-hero">
+                <h2>Você está a um passo <br> de ter a sua empresa</h2>
+                <div class="frase"><h3>mais</h3> <b id="texto"></b></div>
+                <p>Adquira as melhores estratégias para <br> impulsionar a sua equipe</p>
+                <button type="button">Entrar em contato</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="grid-sobre">
+            <div>
+                <h3>Conheça mais sobre a gente</h3>
+                <p>Somos uma empresa inovadora especializada em criar soluções de gamificação personalizadas para
+                    empresas de todos os portes e setores. <br> Nós acreditamos no poder transformador dos jogos e da
+                    tecnologia para engajar equipes, aumentar a produtividade e fomentar a motivação.</p>
+            </div>
+            <div class="text-sobre-row">
+                <div class="text-sobre-column">
+                    <h3>Projetos únicos</h3>
+                    <p>Através de análises detalhadas e algoritmos avançados, adaptamos cada projeto de gamificação às
+                        necessidades específicas de cada cliente, oferecendo desde programas de treinamento interativo
+                        até sistemas de recompensa e engajamento de funcionários.</p>
+                </div>
+
+                <div class="text-sobre-column">
+                    <h3>Sempre atualizados</h3>
+                    <p>Combinando a expertise em inteligência artificial e o conhecimento profundo de design de jogos,
+                        nossa equipe multidisciplinar desenvolve estratégias e plataformas interativas para elevar a
+                        experiência do usuário e impulsionar resultados excepcionais.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="sobre">
-            <div class="grid">
-                <div>
-                    <h3>Conheça mais sobre a gente</h3>
-                    <p>Somos uma empresa inovadora especializada em criar soluções de gamificação <br> personalizadas
-                        para empresas de todos os portes e setores.
-                        <br>
-                        <br>
-                        Nós acreditamos no poder transformador dos jogos e da tecnologia para engajar equipes, <br>
-                        aumentar a produtividade e fomentar a motivação.
-                    </p>
-                    <br>
-                    <br>
-                </div>
-
-                <div class="text-row">
-                    <div class="text-column">
-                        <h3>Projetos únicos</h3>
-                        <p>Através de análises detalhadas e algoritmos avançados, adaptamos cada projeto de
-                            gamificação às
-                            necessidades específicas de cada cliente, oferecendo desde programas de treinamento
-                            interativo
-                            até
-                            sistemas de recompensa e engajamento de funcionários.
-                    </div>
-
-                    <div class="text-column">
-                        <h3>Sempre atualizados</h3>
-                        <p>Combinando a expertise em inteligência artificial e o conhecimento profundo de design de
-                            jogos,
-                            nossa
-                            equipe multidisciplinar desenvolve estratégias e plataformas interativas para elevar a
-                            experiência do usuário e impulsionar resultados excepcionais.</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="mvv">
-            <div class="grid">
-                <div class="nav">
-                    <div class="m">
-                        <button>Missão</button>
-                        <p class="text-mvv">Ser o líder do setor no mercado, expandindo a presença globalmente e
-                            mantendo um ambiente de trabalho inspirador.</p>
-                    </div>
-
-                    <div class="vi">
-                        <button>Visão</button>
-                        <p class="text-mvv">Ajudar as pessoas e empresas em todo o mundo a descobrirem todo o seu
-                            potencial
-                            de um modo
-                            que seja simples e divertido. </p>
-                    </div>
-
-                    <div class="va">
-                        <button>Valores</button>
-                        <p class="text-mvv">
-                            Profissionalismo<br><br>Seriedade<br><br>Divesão<br><br>Inovação<br><br>Simplicidade</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="beneficio">
+    <section id="beneficio">
+        <div class="grid-beneficio">
             <h3>Os principais benefícios para sua empresa</h3>
-
-            <div class="grid-beneficio-row">
-                <div class="grid-beneficio-column">
+            <div id="overflow-beneficio">
+                <div class="grid-beneficio-row">
                     <div class="container">
                         <img src="Img/Card Customização.png" alt="Card Customização" class="image">
                         <div class="overlay">
@@ -128,9 +91,7 @@
                             <div class="text">Segurança do início ao fim. Todas as soluções estão dentro da LGPD.</div>
                         </div>
                     </div>
-                </div>
 
-                <div class="grid-beneficio-column">
                     <div class="container">
                         <img src="Img/Card Fácil Acesso.png" alt="Card Facil Acesso" class="image">
                         <div class="overlay">
@@ -141,19 +102,14 @@
                     </div>
 
                     <div class="container">
-
                         <img src="Img/Card Custo-Benefífio.png" alt="Card Custo-Benefífio" class="image">
                         <div class="overlay">
                             <div class="titulo">Custo-Benefífio</div>
                             <div class="text">O valor está na experiência e no resultado da gamificação</div>
                         </div>
                     </div>
-                </div>
-
-                <div class="grid-beneficio-column">
 
                     <div class="container">
-
                         <img src="Img/Card Performance.png" alt="Card Performance" class="image">
                         <div class="overlay">
                             <div class="titulo">Performance</div>
@@ -162,7 +118,6 @@
                     </div>
 
                     <div class="container">
-
                         <img src="Img/Card IA.png" alt="Card IA" class="image">
                         <div class="overlay">
                             <div class="titulo">Inteligência Artificial</div>
@@ -170,14 +125,16 @@
                                 usuários</div>
                         </div>
                     </div>
+
                 </div>
             </div>
-        </section>
+    </section>
 
-        <section id="cases">
-            <div class="grid">
-                <h3>Nossos cases de sucesso</h3>
-                <div class="bloco">
+    <section id="cases">
+        <div class="grid-cases">
+            <h3>Nossos cases de sucesso</h3>
+            <div class="overflow-cases">
+                <div class="bloco-cases">
                     <div class="bloco-1">
                         <img class="logo-case" src="Logotipos/GoodHealthy.png" alt="Logo da empresa GoodHealthy">
                     </div>
@@ -189,9 +146,7 @@
                     <div class="bloco-3">
                         <img class="logo-case" src="Logotipos/Galesun.png" alt="Logo da empresa Galesun">
                     </div>
-                </div>
 
-                <div class="bloco">
                     <div class="bloco-4">
                         <img class="logo-case" src="Logotipos/Animall.png" alt="Logo da empresa Animall">
                     </div>
@@ -199,136 +154,132 @@
                     <div class="bloco-5">
                         <img class="logo-case" src="Logotipos/Biomove.png" alt="Logo da empresa Biomove">
                     </div>
+
                 </div>
             </div>
+        </div>
+    </section>
 
-        </section>
+    <section id="info">
+        <div class="grid-info">
+            <div class="grid-info-row">
 
-        <section id="info">
-            <div class="grid">
-                <div class="align">
-                    <img src="Icones/Victor.png" alt="Ícone personalizado" class="vetor-info">
+                <img src="Icones/Victor.png" alt="Ícone personalizado">
+                <div class="grid-info-column">
                     <div class="text-info">
                         <p>A implementação de jogos na estratégia de negócios ganhou impulso nos últimos anos e cada vez
                             mais organizações aproveitam os benefícios.</p>
                         <br>
                         <br>
-                        <p class="autor">Blog Review42</p>
+                        <p class="autor">- Blog Review42</p>
                     </div>
+
                 </div>
             </div>
+        </div>
+    </section>
 
-        </section>
+    <section id="teacher">
+        <div class="grid-prof">
+            <h3>Conheça os seus treinadores</h3>
+            <div class="prof-row">
+                <div class="prof-tadeu">
+                    <p class="prof-nome">Felipe</p>
+                    <p class="sobrenome">Tadeu</p>
+                    <img class="professor" src="Img/Img Tadeu.png" alt="Professor Tadeu">
+                </div>
 
-        <section id="teacher">
-            <div class="grid">
-                <h3>Quem serão os seus treinadores?</h3>
-                <div class="prof-grid">
-                    <div class="treinadores">
-                        <div class="prof-row">
-                            <div class="prof-tadeu">
-                                <p class="prof-nome">Felipe</p>
-                                <p class="sobrenome">Tadeu</p>
-                                <img class="professor" src="Img/Img Tadeu.png" alt="Professor Tadeu">
-                            </div>
+                <div class="prof-holanda">
+                    <p class="prof-nome">Mateus</p>
+                    <p class="sobrenome">Holanda</p>
+                    <img class="professor" src="Img/Img Holanda.png" alt="Professor Holanda">
+                </div>
 
-                            <div class="prof-holanda">
-                                <p class="prof-nome">Mateus</p>
-                                <p class="sobrenome">Holanda</p>
-                                <img class="professor" src="Img/Img Holanda.png" alt="Professor Holanda">
-                            </div>
-                        </div>
-                        <div class="prof-thiago">
-                            <p class="prof-nome">Thiago</p>
-                            <p class="sobrenome">Nascimento</p>
-                            <img class="professor" src="Img/Img Thiago.png" alt="Professor Thiago">
-                        </div>
-
-                    </div>
+                <div class="prof-thiago">
+                    <p class="prof-nome">Thiago</p>
+                    <p class="sobrenome">Nascimento</p>
+                    <img class="professor" src="Img/Img Thiago.png" alt="Professor Thiago">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="faq">
-            <div class="grid">
-                <h3>Perguntas frequentes - FAQ</h3>
-                <div class="box-faq">
+    <section id="faq">
+        <div class="grid-faq">
+            <h3>Perguntas frequentes - FAQ</h3>
+            <div class="box-faq">
 
+                <details>
+                    <summary>Como funciona a gamificação? <img src="Icones/Botão suspenso.png" alt="Botão suspenso">
+                    </summary>
+                    <p>A gamificação está presente através de pontuações, rankings, questões interativas e
+                        possibilidade de repetição para aumentar a produtividade dos funcionários na sua empresa,
+                        gerando mais eficiência e melhores taxas de vendas.</p>
+                </details>
+
+                <details>
+                    <summary>Quais são os seus diferenciais? <img src="Icones/Botão suspenso.png"
+                            alt="Botão suspenso"></summary>
+                    <p>Além de utilizarmos Inteligência Artificial, nós trabalhamos com uma personalização para cada
+                        projeto que criamos, assim, os problemas da sua empresa serão resolvidos com a maior atenção
+                        pelos nossos colaboradores.</p>
+                </details>
+
+                <details>
+                    <summary>Como funciona a Inteligência Artificial? <img src="Icones/Botão suspenso.png"
+                            alt="Botão suspenso"></summary>
+                    <p>A Inteligência Artificial reproduz padrões de comportamento semelhantes ao humano por
+                        dispositivos e programas computacionais, executando tarefas simples e que são repetitivas.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>É possível solicitar uma demonstração gratuita? <img src="Icones/Botão suspenso.png"
+                            alt="Botão suspenso"></summary>
+                    <p>Sim. Nós oferecemos uma pequena amostra dos nossos serviços. <br> Basta responder ao
+                        formulário e pedir no campo mensagem por "solicitar demonstração". E em breve um de nossos
+                        colaboradores entrará em contato.</p>
+                </details>
+
+                <div class="box-margin">
                     <details>
-                        <summary>Como funciona a gamificação? <img src="Icones/Botão suspenso.png" alt="Botão suspenso">
-                        </summary>
-                        <p>A gamificação está presente através de pontuações, rankings, questões interativas e
-                            possibilidade de repetição para aumentar a produtividade dos funcionários na sua empresa,
-                            gerando mais eficiência e melhores taxas de vendas.</p>
-                    </details>
-
-                    <details>
-                        <summary>Quais são os seus diferenciais? <img src="Icones/Botão suspenso.png"
+                        <summary>Vocês atendem a todos os nichos? <img src="Icones/Botão suspenso.png"
                                 alt="Botão suspenso"></summary>
-                        <p>Além de utilizarmos Inteligência Artificial, nós trabalhamos com uma personalização para cada
-                            projeto que criamos, assim, os problemas da sua empresa serão resolvidos com a maior atenção
-                            pelos nossos colaboradores.</p>
+                        <p>Não. Nós atendemos os segmentos empresariais. Se houver dúvidas se a sua empresa está
+                            dentro dos nossos serviços, entre em contato e peça no campo mensagem por “Tirar
+                            dúvidas”. Em breve um de nossos colaboradores entrará em contato.</p>
                     </details>
-
-                    <details>
-                        <summary>Como funciona a Inteligência Artificial? <img src="Icones/Botão suspenso.png"
-                                alt="Botão suspenso"></summary>
-                        <p>A Inteligência Artificial reproduz padrões de comportamento semelhantes ao humano por
-                            dispositivos e programas computacionais, executando tarefas simples e que são repetitivas.
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary>É possível solicitar uma demonstração gratuita? <img src="Icones/Botão suspenso.png"
-                                alt="Botão suspenso"></summary>
-                        <p>Sim. Nós oferecemos uma pequena amostra dos nossos serviços. <br> Basta responder ao
-                            formulário e pedir no campo mensagem por "solicitar demonstração". E em breve um de nossos
-                            colaboradores entrará em contato.</p>
-                    </details>
-
-                    <div class="box-margin">
-                        <details>
-                            <summary>Vocês atendem a todos os nichos? <img src="Icones/Botão suspenso.png"
-                                    alt="Botão suspenso"></summary>
-                            <p>Não. Nós atendemos os segmentos empresariais. Se houver dúvidas se a sua empresa está
-                                dentro dos nossos serviços, entre em contato e peça no campo mensagem por “Tirar
-                                dúvidas”. Em breve um de nossos colaboradores entrará em contato.</p>
-                        </details>
-                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-        </section>
-
-        <form id="form">
-
-            <div class="grid">
-                <h3>Solicite agora mesmo os nossos serviços</h3>
-                <div class="fundo">
-                    <div class="nome">
-                        <label for="campo-nome">Nome</label>
-                        <input type="text" name="" id="campo-nome" placeholder="Insira o seu nome...">
-                    </div>
-                    <div class="email">
-                        <label for="campo-email">Email</label>
-                        <input type="email" name="" id="campo-email" placeholder="Insira seu email...">
-                    </div>
-                    <div class="descricao">
-                        <label for="campo-descricao">Mensagem</label>
-                        <textarea placeholder="Escreva o seu pedido aqui..." id="campo-texto" cols="30"
-                            rows="10"></textarea>
-                    </div>
-                    <button class="btn-form" type="submit">Enviar</button>
+    <form id="form">
+            <h3>Solicite agora mesmo os nossos serviços</h3>
+            <div class="fundo">
+                <div class="nome">
+                    <label for="campo-nome">Nome</label>
+                    <input type="text" name="" id="campo-nome" placeholder="Insira o seu nome...">
                 </div>
+
+                <div class="email">
+                    <label for="campo-email">Email</label>
+                    <input type="email" name="" id="campo-email" placeholder="Insira seu email...">
+                </div>
+
+                <div class="descricao">
+                    <label for="campo-descricao">Mensagem</label>
+                    <textarea placeholder="Escreva o seu pedido aqui..." id="campo-texto" cols="30"
+                        rows="10"></textarea>
+                </div>
+                <button class="btn-form" type="submit">Enviar</button>
             </div>
-
-        </form>
-
-    </main>
+    </form>
 
     <footer>
-        <div class="grid">
+        <div class="grid-footer">
             <div class="align-footer">
+                <img class="controle" src="Logotipos/Controle positivo.png" alt="">
                 <img class="logo-footer" src="Logotipos/Logotipo footer.png"
                     alt="Logo da empresa gamezando personalizado para o footer">
 
@@ -389,8 +340,35 @@
                 <p>Todos os direitos reservados</p>
             </div>
         </div>
-
     </footer>
+
+
+    <!-- palavra rotacionando - palavra rotacionando - palavra rotacionando - palavra rotacionando -->
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    
+    $(function () {
+        let palavras  = ["criativa", "dinâmica", "inovada", "prazerosa", "eficiente"]
+        let inicio    = 0
+        let intervalo = 1500
+
+        $('#texto').text(palavras[inicio++])
+            setInterval(function() {
+                
+        }, intervalo);
+        setInterval(function() {
+            //   $('#texto').fadeOut(function() {
+                $('#texto').slideUp(function() {
+                    if (inicio >= palavras.length) {
+                     inicio = 0;
+                    }
+                // $(this).text(palavras[inicio++]).fadeIn();
+                $(this).text(palavras[inicio++]).slideDown();
+                });
+        }, intervalo);
+    });
+</script>
 
 </body>
 
