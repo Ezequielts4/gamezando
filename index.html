@@ -15,27 +15,32 @@
 <body>
 
     <header>
-        <nav class="navigation">
+        <div class="grid-header">
             <img src="Logotipos/Controle negativo.png" alt="Logotipo modo controle negativo" class="controle">
             <img src="Logotipos/Gamezando-negativo.png" alt="Logotipo modo negativo" class="logo">
-            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
-                <path
-                d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z" />
-            </svg></button>
-            <ul>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#beneficio">Benefícios</a></li>
-                        <li><a href="#cases">Cases</a></li>
-                        <li><a href="#form">Contato</a></li>
-                    </ul>
-        </nav>
+            <nav id="menu" class="menu">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#beneficio">Benefícios</a></li>
+                    <li><a href="#cases">Cases</a></li>
+                    <li><a href="#form">Contato</a></li>
+                </ul>
+            </nav>
+            <button onclick="abreFechaMenu()">
+                <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" /></svg>
+                <svg id="icone-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" /></svg>
+            </button>
+        </div>
+
     </header>
 
     <section id="hero">
         <div class="grid-hero">
             <div class="text-hero">
                 <h2>Você está a um passo <br> de ter a sua empresa</h2>
-                <div class="frase"><h3>mais</h3> <b id="texto"></b></div>
+                <div class="frase">
+                    <h3>mais</h3> <b id="texto"></b>
+                </div>
                 <p>Adquira as melhores estratégias para <br> impulsionar a sua equipe</p>
                 <button type="button">Entrar em contato</button>
             </div>
@@ -217,8 +222,8 @@
                 </details>
 
                 <details>
-                    <summary>Quais são os seus diferenciais? <img src="Icones/Botão suspenso.png"
-                            alt="Botão suspenso"></summary>
+                    <summary>Quais são os seus diferenciais? <img src="Icones/Botão suspenso.png" alt="Botão suspenso">
+                    </summary>
                     <p>Além de utilizarmos Inteligência Artificial, nós trabalhamos com uma personalização para cada
                         projeto que criamos, assim, os problemas da sua empresa serão resolvidos com a maior atenção
                         pelos nossos colaboradores.</p>
@@ -254,25 +259,24 @@
     </section>
 
     <form id="form">
-            <h3>Solicite agora mesmo os nossos serviços</h3>
-            <div class="fundo">
-                <div class="nome">
-                    <label for="campo-nome">Nome</label>
-                    <input type="text" name="" id="campo-nome" placeholder="Insira o seu nome...">
-                </div>
-
-                <div class="email">
-                    <label for="campo-email">Email</label>
-                    <input type="email" name="" id="campo-email" placeholder="Insira seu email...">
-                </div>
-
-                <div class="descricao">
-                    <label for="campo-descricao">Mensagem</label>
-                    <textarea placeholder="Escreva o seu pedido aqui..." id="campo-texto" cols="30"
-                        rows="10"></textarea>
-                </div>
-                <button class="btn-form" type="submit">Enviar</button>
+        <h3>Solicite agora mesmo os nossos serviços</h3>
+        <div class="fundo">
+            <div class="nome">
+                <label for="campo-nome">Nome</label>
+                <input type="text" name="" id="campo-nome" placeholder="Insira o seu nome...">
             </div>
+
+            <div class="email">
+                <label for="campo-email">Email</label>
+                <input type="email" name="" id="campo-email" placeholder="Insira seu email...">
+            </div>
+
+            <div class="descricao">
+                <label for="campo-descricao">Mensagem</label>
+                <textarea placeholder="Escreva o seu pedido aqui..." id="campo-texto" cols="30" rows="10"></textarea>
+            </div>
+            <button class="btn-form" type="submit">Enviar</button>
+        </div>
     </form>
 
     <footer>
@@ -344,30 +348,30 @@
 
     <!-- palavra rotacionando - palavra rotacionando - palavra rotacionando - palavra rotacionando -->
 
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript">
-    
-    $(function () {
-        let palavras  = ["criativa", "dinâmica", "inovada", "prazerosa", "eficiente"]
-        let inicio    = 0
-        let intervalo = 1500
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
 
-        $('#texto').text(palavras[inicio++])
-            setInterval(function() {
-                
-        }, intervalo);
-        setInterval(function() {
-            //   $('#texto').fadeOut(function() {
-                $('#texto').slideUp(function() {
+        $(function () {
+            let palavras = ["criativa", "dinâmica", "inovada", "prazerosa", "eficiente"]
+            let inicio = 0
+            let intervalo = 1500
+
+            $('#texto').text(palavras[inicio++])
+            setInterval(function () {
+
+            }, intervalo);
+            setInterval(function () {
+                //   $('#texto').fadeOut(function() {
+                $('#texto').slideUp(function () {
                     if (inicio >= palavras.length) {
-                     inicio = 0;
+                        inicio = 0;
                     }
-                // $(this).text(palavras[inicio++]).fadeIn();
-                $(this).text(palavras[inicio++]).slideDown();
+                    // $(this).text(palavras[inicio++]).fadeIn();
+                    $(this).text(palavras[inicio++]).slideDown();
                 });
-        }, intervalo);
-    });
-</script>
+            }, intervalo);
+        });
+    </script>
 
 </body>
 
