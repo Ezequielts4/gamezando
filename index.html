@@ -258,27 +258,29 @@
         </div>
     </section>
 
-    <form id="form">
-        <h3>Solicite agora mesmo os nossos serviços</h3>
-        <div class="fundo">
-            <div class="nome">
-                <label for="campo-nome">Nome</label>
-                <input type="text" name="" id="campo-nome" placeholder="Insira o seu nome...">
+    <section id="formulario">
+        <form id="form" onsubmit="solicitarOrcamento(event)">
+            <h3>Solicite agora mesmo os nossos serviços</h3>
+            <div class="fundo">
+                <div class="nome">
+                    <label for="campo-nome">Nome</label>
+                    <input type="text" name="" id="campo-nome" placeholder="Insira o seu nome...">
+                </div>
+                
+                <div class="email">
+                    <label for="campo-email">Email</label>
+                    <input type="email" name="" id="campo-email" placeholder="Insira seu email...">
+                </div>
+                
+                <div class="descricao">
+                    <label for="campo-descricao">Mensagem</label>
+                    <textarea placeholder="Escreva o seu pedido aqui..." id="campo-texto" cols="30" rows="10"></textarea>
+                </div>
+                <button class="btn-form" type="submit">Enviar</button>
             </div>
-
-            <div class="email">
-                <label for="campo-email">Email</label>
-                <input type="email" name="" id="campo-email" placeholder="Insira seu email...">
-            </div>
-
-            <div class="descricao">
-                <label for="campo-descricao">Mensagem</label>
-                <textarea placeholder="Escreva o seu pedido aqui..." id="campo-texto" cols="30" rows="10"></textarea>
-            </div>
-            <button class="btn-form" type="submit">Enviar</button>
-        </div>
-    </form>
-
+        </form>
+        
+    </section>
     <footer>
         <div class="grid-footer">
             <div class="align-footer">
